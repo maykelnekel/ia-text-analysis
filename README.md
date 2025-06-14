@@ -2,21 +2,25 @@
 
 API com integração de IA para análise de texto
 
-## Descrição
+Essa API conta com um deploy realizado no render. Esse deploy está atualmente no `tier free`, portanto as primeiras requests podem demorar por conta do `sleep time` e podem haver instabilidades.
+
+> 📢 Acesse a documentação **completa** em: [https://ia-text-analysis.onrender.com/docs](https://ia-text-analysis.onrender.com/docs)
+
+## 📝 Descrição
 
 Esta API permite analisar textos, retornando estatísticas básicas e um resumo de sentimento utilizando inteligência artificial (OpenAI GPT-4).
 
 O projeto foi desenvolvido como desafio técnico para a [Arbitralis](https://www.arbitralis.com.br/).
 
-## Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
-- **Linguagem:** Python 3.12
-- **Framework:** FastAPI
-- **IA:** OpenAI GPT-4
-- **Design Pattern:** Repository Pattern
-- **Documentação:** Swagger
+- 🐍 **Linguagem:** Python 3.12
+- 🚀 **Framework:** FastAPI
+- 🤖 **IA:** OpenAI GPT-4
+- 🏭 **Design Pattern:** Repository Pattern
+- 📃 **Documentação:** Swagger
 
-## Como executar o projeto
+## ⚡ Como executar o projeto
 
 1. Clone o repositório:
    ```bash
@@ -56,15 +60,15 @@ O projeto foi desenvolvido como desafio técnico para a [Arbitralis](https://www
    uvicorn app.main:app --reload
    ```
 
-## Como usar a API
+## ✍️ Como usar a API
 
 Essa api conta com uma documentação interativa utilizando Swagger.
 
-Você poderá realizar testes utilizando a própria documentação, sem a necessidade de realizar chamadas à API por meios externos como bash, postman ou insomnia.
+Você poderá realizar testes utilizando a própria [documentação em produção](https://ia-text-analysis.onrender.com/docs), sem a necessidade de realizar chamadas à API por meios externos como bash, postman ou insomnia.
 
-Acesse a documentação **completa** em: [http://localhost:8000/docs](http://localhost:8000/docs)
+> Caso esteja rodando no seu ambiente local, acesse a documentação **completa** em: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## Documentação resumida
+## 📄 Documentação resumida
 
 ### 1. Análise de Texto
 

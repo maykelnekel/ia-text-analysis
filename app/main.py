@@ -3,7 +3,16 @@ from app.schemas import TextRequest, TextResponse, TextSearchResponse, ErrorResp
 from app.services.text_analysis import TextAnalysisService
 from app.repositories.memory_repository import InMemoryRepository
 
-app = FastAPI(title="Sentiment Analysis API", description="API com integração de IA para análise de texto", )
+app = FastAPI(
+    title="Sentiment Analysis API",
+    description=(
+        "API desenvolvida para análise de sentimentos em textos, integrando inteligência artificial (OpenAI GPT-4) para classificação de sentimento, estatísticas de palavras e busca de termos. "
+        "Desenvolvido por Maykel Nekel.\n\n"
+        "**Contato:** [LinkedIn](https://www.linkedin.com/in/maykelnekel/) | [maykelnekel@gmail.com](mailto:maykelnekel@gmail.com)\n\n"
+        "**Repositório no GitHub:** [ia-text-analysis](https://github.com/maykelnekel/ia-text-analysis)\n\n"
+        "This is a challenge by [Coodesh](https://coodesh.com/) and [Arbitralis](https://www.arbitralis.com.br/)."
+    ),
+)
 
 repository = InMemoryRepository()
 service = TextAnalysisService(repository)
