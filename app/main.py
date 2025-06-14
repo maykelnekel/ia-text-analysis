@@ -13,7 +13,6 @@ service = TextAnalysisService(repository)
     responses={
         200: {"model": TextResponse, "description": "Análise feita com sucesso."},
         422: {"model": ErrorResponse, "description": "O campo 'text' não pode ser vazio."},
-        500: {"model": ErrorResponse, "description": "Erro interno ao analisar o texto."}
     },
     summary="Analisa o texto enviado"
 )
