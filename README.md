@@ -4,7 +4,9 @@ API com integração de IA para análise de texto
 
 ## Descrição
 
-Esta API permite analisar textos, retornando estatísticas básicas e um resumo de sentimento utilizando inteligência artificial (OpenAI GPT-4). O projeto foi desenvolvido como parte do desafio técnico para a [Arbitralis](https://www.arbitralis.com.br/).
+Esta API permite analisar textos, retornando estatísticas básicas e um resumo de sentimento utilizando inteligência artificial (OpenAI GPT-4).
+
+O projeto foi desenvolvido como desafio técnico para a [Arbitralis](https://www.arbitralis.com.br/).
 
 ## Tecnologias Utilizadas
 
@@ -12,35 +14,57 @@ Esta API permite analisar textos, retornando estatísticas básicas e um resumo 
 - **Framework:** FastAPI
 - **IA:** OpenAI GPT-4
 - **Design Pattern:** Repository Pattern
+- **Documentação:** Swagger
 
 ## Como executar o projeto
 
 1. Clone o repositório:
    ```bash
-   git clone <url-do-repositorio>
+   git clone git@github.com:maykelnekel/sentiment-api.git
    cd sentiment-api
    ```
 2. Crie e ative um ambiente virtual:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+   - **Linux/MacOS:**
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+   - **Windows (cmd):**
+     ```cmd
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - **Windows (PowerShell):**
+     ```powershell
+     python -m venv venv
+     .\venv\Scripts\Activate.ps1
+     ```
 3. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    ```
-4. Configure a variável de ambiente `OPENAI_API_KEY` no arquivo `.env`:
+4. Crie o arquivo `.env`:
+   ```bash
+   touch .env
+   ```
+5. Configure a variável de ambiente `OPENAI_API_KEY` no arquivo `.env`:
    ```env
    OPENAI_API_KEY="sua-chave-openai"
    ```
-5. Execute a API:
+6. Execute a API:
    ```bash
    uvicorn app.main:app --reload
    ```
 
 ## Como usar a API
 
-Acesse a documentação interativa em: [http://localhost:8000/docs](http://localhost:8000/docs)
+Essa api conta com uma documentação interativa utilizando Swagger.
+
+Você poderá realizar testes utilizando a própria documentação, sem a necessidade de realizar chamadas à API por meios externos como bash, postman ou insomnia.
+
+Acesse a documentação **completa** em: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+## Documentação resumida
 
 ### 1. Análise de Texto
 
