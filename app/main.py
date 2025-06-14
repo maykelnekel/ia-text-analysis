@@ -20,8 +20,7 @@ service = TextAnalysisService(repository)
 @app.post(
     "/analyze-text",
     responses={
-        200: {"model": TextResponse, "description": "Análise feita com sucesso."},
-        422: {"model": ErrorResponse, "description": "O campo 'text' não pode ser vazio."},
+        200: {"model": TextResponse, "description": "Análise feita com sucesso."}        
     },
     summary="Analisa o texto enviado"
 )
@@ -43,7 +42,6 @@ def analyze_text_endpoint(data: TextRequest):
     "/search-term",
     responses={
         200: {"model": TextSearchResponse, "description": "Termo encontrado com sucesso."},
-        422: {"model": ErrorResponse, "description": "O termo fornecido não está de acordo com a regra de tipo."},
         404: {"model": ErrorResponse, "description": "Nenhuma análise foi realizada ainda."}
     },
     summary="Buscar termo na última análise",
