@@ -55,8 +55,7 @@ class TextAnalysisService:
         
         result = self.repository.search_term(term)
         
-        if not result.found:
+        if not result["found"]:
           raise HTTPException(status_code=404, detail="Nenhum termo foi encontrado.")
             
-        return {"term": term, "found": result.found, "text": result.text}
-    
+        return {"term": term, "found": result["found"], "text": result["text"]}

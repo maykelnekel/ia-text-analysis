@@ -21,7 +21,6 @@ def get_sentiment_summary(text: str) -> str:
             temperature=0.5,
             max_tokens=150
         )
-        print(response)
         return response.choices[0].message.content
 
     except Exception as e:
