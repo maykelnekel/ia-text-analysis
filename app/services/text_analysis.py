@@ -23,7 +23,7 @@ class TextAnalysisService:
 
         top_words = [word for word, _ in Counter(words).most_common(5)]
 
-        return len(top_words)
+        return top_words
 
     def analyze(self, text: str) -> TextResponse:
         if not text or not text.strip():
