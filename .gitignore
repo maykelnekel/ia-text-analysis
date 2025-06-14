@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtualenv
+venv/
+ENV/
+.env
+.venv
+
+# VSCode
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração/segredos
+.env
+*.env
+
+# Cache e logs
+*.log
+.cache/
+
+# Arquivos de IA/Modelos
+*.model
+*.h5
+*.pth
+*.pkl
+
+# Outros
+*.sqlite3
+*.db
+
+# Ignore arquivos temporários
+*~
+*.swp
+*.swo
+
+# Ignore arquivos de testes
+htmlcov/
+.coverage
+.tox/
+
+# Ignore arquivos de build
+build/
+dist/
+*.egg-info/
